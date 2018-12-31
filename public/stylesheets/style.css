@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.book {
+  clear: both;
+  margin-bottom: 30px;
+  display: inline-block;
+  max-width: 300px; }
+
+.text {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top; }
+
+.booklist {
+  float: left; }
+
+iframe {
+  float: right; }
+
+.mdl-layout-title {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

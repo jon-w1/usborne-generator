@@ -1,0 +1,350 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+    <title>Usborne Book Generator</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <!--<meta name="mobile-web-app-capable" content="yes">-->
+    <!--<link rel="icon" sizes="192x192" href="images/android-desktop.png">-->
+
+    <!--&lt;!&ndash; Add to homescreen for Safari on iOS &ndash;&gt;-->
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <!--<meta name="apple-mobile-web-app-title" content="Material Design Lite">-->
+    <!--<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">-->
+
+    <!--&lt;!&ndash; Tile icon for Win8 (144x144 + tile color) &ndash;&gt;-->
+    <!--<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">-->
+    <!--<meta name="msapplication-TileColor" content="#3372DF">-->
+
+    <!--<link rel="shortcut icon" href="images/favicon.png">-->
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body>
+
+    <!-- Add Event link here -->
+
+    <iframe src="https://r7829.myubam.com/1114042" width="0" height="0"></iframe>
+
+    <!-- End Event Link -->
+
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <a class="mdl-layout-title mdl-color-text--grey-800" href="/">Usborne Book Generator</a>
+          <div class="mdl-layout-spacer"></div>
+          <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;expandable">-->
+            <!--<label class="mdl-button mdl-js-button mdl-button&#45;&#45;icon" for="search">-->
+              <!--<i class="material-icons">search</i>-->
+            <!--</label>-->
+            <!--<div class="mdl-textfield__expandable-holder">-->
+              <!--<input class="mdl-textfield__input" type="text" id="search">-->
+              <!--<label class="mdl-textfield__label" for="search">Enter your query...</label>-->
+            <!--</div>-->
+          <!--</div>-->
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <form class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <!--<div class="demo-crumbs mdl-color-text&#45;&#45;grey-500">-->
+              <!--Book Survey &gt; <i>Recommendations List</i>-->
+            <!--</div>-->
+            <h2>Your Child's Profile:</h2>
+            <p>Answer a few questions to receive an instant, personalized list of books based on your child</p>
+            <h3>What is your child's age level?</h3>
+            <select id="category">
+              <option value="">Select an option...</option>
+              <option value="31">Babies & Toddlers</option>
+              <option value="120">Preschool & Kindergarten</option>
+              <option value="121">School Age</option>
+            </select>
+
+            <!---->
+            <h3>My child is interested in:</h3>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+              <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Animals</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="adventure">
+              <input type="checkbox" id="adventure" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Adventure</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="castle">
+              <input type="checkbox" id="castle" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Castles</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+              <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Cars, trucks, trains</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+              <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Firefighters / Police</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+              <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Farms</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
+              <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Dolls</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-6">
+              <input type="checkbox" id="checkbox-6" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Dance</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-7">
+              <input type="checkbox" id="checkbox-7" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Insects</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-8">
+              <input type="checkbox" id="checkbox-8" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Dinosaurs</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-9">
+              <input type="checkbox" id="checkbox-9" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Sea Life</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-10">
+              <input type="checkbox" id="checkbox-10" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Drawing</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-11">
+              <input type="checkbox" id="checkbox-11" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Pirates</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-12">
+              <input type="checkbox" id="checkbox-12" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Mermaids</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-13">
+              <input type="checkbox" id="checkbox-13" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Space</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-14">
+              <input type="checkbox" id="checkbox-14" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Music</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-15">
+              <input type="checkbox" id="checkbox-15" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Food</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-16">
+              <input type="checkbox" id="checkbox-16" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Fairies / Unicorns</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-17">
+              <input type="checkbox" id="checkbox-17" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Travel</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="survival">
+              <input type="checkbox" id="survival" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Survival</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="other">
+              <input type="checkbox" id="other" class="mdl-checkbox__input">
+              <input class="mdl-textfield__input" type="text" id="otherBox" placeholder="Other...">
+            </label>
+
+            <!---->
+            <h3>My child would enjoy learning more about:</h3>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-18">
+              <input type="checkbox" id="checkbox-18" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Cooking</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-19">
+              <input type="checkbox" id="checkbox-19" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Business / Entrepreneur</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-20">
+              <input type="checkbox" id="checkbox-20" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Human Body</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-21">
+              <input type="checkbox" id="checkbox-21" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Weather</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-22">
+              <input type="checkbox" id="checkbox-22" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">History</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-23">
+              <input type="checkbox" id="checkbox-23" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Science</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-24">
+              <input type="checkbox" id="checkbox-24" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Art</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-25">
+              <input type="checkbox" id="checkbox-25" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Music</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-26">
+              <input type="checkbox" id="checkbox-26" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Hospitals / Doctors</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-27">
+              <input type="checkbox" id="checkbox-27" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Sewing</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-28">
+              <input type="checkbox" id="checkbox-28" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Genes / DNA</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-29">
+              <input type="checkbox" id="checkbox-29" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Politics / Government</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-30">
+              <input type="checkbox" id="checkbox-30" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Nature</span>
+            </label>
+
+            <!---->
+            <h3>My child may enjoy activities that include:</h3>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-31">
+              <input type="checkbox" id="checkbox-31" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Paper folding / Origami</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-32">
+              <input type="checkbox" id="checkbox-32" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Spotting Hidden Things</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-33">
+              <input type="checkbox" id="checkbox-33" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Stickers</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-34">
+              <input type="checkbox" id="checkbox-34" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Cutting / Assembling</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-35">
+              <input type="checkbox" id="checkbox-35" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Solving Puzzles</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-36">
+              <input type="checkbox" id="checkbox-36" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Coloring</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-37">
+              <input type="checkbox" id="checkbox-37" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Painting</span>
+            </label>
+
+            <!---->
+            <h3>I would like my child to have more exposure to:</h3>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-38">
+              <input type="checkbox" id="checkbox-38" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Handwriting / Pen control</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-39">
+              <input type="checkbox" id="checkbox-39" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Colors</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-40">
+              <input type="checkbox" id="checkbox-40" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Letters</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-41">
+              <input type="checkbox" id="checkbox-41" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Numbers</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-42">
+              <input type="checkbox" id="checkbox-42" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Multiplication Tables</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-43">
+              <input type="checkbox" id="checkbox-43" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Fractions & Decimals</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-44">
+              <input type="checkbox" id="checkbox-44" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Phonics</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-45">
+              <input type="checkbox" id="checkbox-45" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Grammar</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-46">
+              <input type="checkbox" id="checkbox-46" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">US States / Capitals</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-47">
+              <input type="checkbox" id="checkbox-47" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Periodic Table</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-48">
+              <input type="checkbox" id="checkbox-48" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Vocabulary</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-49">
+              <input type="checkbox" id="checkbox-49" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Maps</span>
+            </label>
+
+            <!---->
+            <h3>Your child's first name:</h3>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="firstname">
+              <label class="mdl-textfield__label" for="firstname">Enter name...</label>
+            </div>
+            <div>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--<footer class="demo-footer mdl-mini-footer">-->
+          <!--<div class="mdl-mini-footer&#45;&#45;left-section">-->
+            <!--<ul class="mdl-mini-footer&#45;&#45;link-list">-->
+              <!--<li><a href="#">Help</a></li>-->
+              <!--<li><a href="#">Privacy and Terms</a></li>-->
+              <!--<li><a href="#">User Agreement</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
+        <!--</footer>-->
+      </main>
+    </div>
+    <!--<a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/article/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-color&#45;&#45;accent mdl-color-text&#45;&#45;accent-contrast">View Source</a>-->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+    <script src="javascripts/client.js"></script>
+  </body>
+</html>

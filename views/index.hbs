@@ -1,0 +1,12 @@
+<h2>{{name}} Personalized Recommendations</h2>
+<p>We think these books fit your child's unique interests and activities, and will help encourage them to engage in reading more throughout the day.</p>
+<h3>{{list.count}} books found:</h3>
+{{#each list.books}}
+    <div class="book">
+        <a href="{{url}}"><img src="{{imgUrl}}"/></a>
+        <div class="text">
+            <a href="{{url}}">{{title}}</a>
+            <p>{{price}}</p>
+        </div>
+    </div>
+{{/each}}
